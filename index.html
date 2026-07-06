@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Up North Aerial — Drone Real Estate Photography | Siren, NW Wisconsin</title>
+<meta name="description" content="Up North Aerial provides professional FAA Part 107 certified drone photography and video for real estate in Siren, Burnett County, and Northwest Wisconsin. Fast, MLS-ready listing media.">
+<meta name="keywords" content="drone real estate photography, aerial photography Wisconsin, Siren WI drone, real estate video, Part 107 drone pilot, Northwoods aerial, lakefront listing photos">
+<meta name="author" content="Up North Aerial">
+<link rel="canonical" href="https://upnorthaerial.com/">
+<!-- Social share preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Up North Aerial — Drone Real Estate Media">
+<meta property="og:description" content="Professional aerial photography & video that makes listings stand out. FAA Part 107 certified. Serving Siren & Northwest Wisconsin.">
+<meta property="og:url" content="https://upnorthaerial.com/">
+<meta property="og:site_name" content="Up North Aerial">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Up North Aerial — Drone Real Estate Media">
+<meta name="twitter:description" content="Professional aerial photography & video for real estate. FAA Part 107 certified. Northwest Wisconsin.">
+<!-- Favicon (inline gold star) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1220'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23e8b84b'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+<!-- Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#070d18; --navy2:#0d1626; --navy3:#111d33;
+    --star:#e8b84b; --star2:#f2cf72;
+    --aurora1:#37e6a1; --aurora2:#3ec3d4; --aurora3:#7f5ce0;
+    --ice:#cfe0f5; --text:#eaf1fa; --muted:#9fb0c8; --line:rgba(207,224,245,.13);
+    --font-display:'Sora','Segoe UI',system-ui,sans-serif;
+    --font-body:'Inter','Segoe UI',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--font-body); background:var(--navy); color:var(--text);
+    line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  h1,h2,h3{font-family:var(--font-display); font-weight:700; line-height:1.12; letter-spacing:-.015em}
+  a{color:inherit; text-decoration:none}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 24px}
+
+  .btn{display:inline-block; background:linear-gradient(135deg,var(--star2),var(--star)); color:#1a1204;
+    font-weight:700; font-family:var(--font-display); font-size:15px;
+    padding:15px 30px; border-radius:12px; transition:transform .18s ease, box-shadow .18s ease;
+    box-shadow:0 8px 26px rgba(232,184,75,.3)}
+  .btn:hover{transform:translateY(-2px); box-shadow:0 12px 34px rgba(232,184,75,.45)}
+  .btn.ghost{background:rgba(207,224,245,.04); color:var(--text); border:1px solid var(--line);
+    box-shadow:none; backdrop-filter:blur(6px)}
+  .btn.ghost:hover{border-color:rgba(55,230,161,.6); box-shadow:0 8px 24px rgba(55,230,161,.12)}
+
+  /* ============ NAV ============ */
+  header{position:fixed; top:0; left:0; right:0; z-index:100;
+    transition:background .3s ease, border-color .3s ease, backdrop-filter .3s ease;
+    border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(7,13,24,.82); backdrop-filter:blur(14px); border-bottom-color:var(--line)}
+  nav{display:flex; align-items:center; justify-content:space-between; padding:18px 24px; max-width:1140px; margin:0 auto}
+  .brand{display:flex; align-items:center; gap:10px; font-family:var(--font-display);
+    font-weight:800; letter-spacing:.05em; font-size:15px}
+  .brand .mark{color:var(--star); font-size:20px; filter:drop-shadow(0 0 8px rgba(232,184,75,.7))}
+  .navlinks{display:flex; gap:32px; font-size:14.5px; font-weight:500; color:var(--muted); align-items:center}
+  .navlinks a{position:relative; padding:4px 0; transition:color .2s}
+  .navlinks a:hover{color:var(--text)}
+  .navlinks a:not(.cta):after{content:""; position:absolute; left:0; bottom:-2px; width:0; height:2px;
+    background:linear-gradient(90deg,var(--aurora1),var(--aurora2)); border-radius:2px; transition:width .25s ease}
+  .navlinks a:not(.cta):hover:after{width:100%}
+  .navlinks .cta{color:#1a1204; background:linear-gradient(135deg,var(--star2),var(--star));
+    padding:9px 20px; border-radius:10px; font-weight:700}
+  .menu-btn{display:none; background:none; border:1px solid var(--line); color:var(--text);
+    border-radius:10px; padding:8px 12px; font-size:18px; cursor:pointer; line-height:1}
+  @media(max-width:760px){
+    .navlinks{display:none}
+    .navlinks.open{display:flex; position:absolute; top:100%; left:0; right:0; flex-direction:column;
+      gap:0; background:rgba(7,13,24,.97); backdrop-filter:blur(16px); border-bottom:1px solid var(--line); padding:8px 0 16px}
+    .navlinks.open a{padding:14px 28px; width:100%}
+    .navlinks.open .cta{margin:10px 24px 0; width:auto; text-align:center}
+    .menu-btn{display:block}
+  }
+
+  /* ============ HERO / NORTHERN LIGHTS ============ */
+  .hero{position:relative; min-height:100svh; display:flex; align-items:center;
+    overflow:hidden; padding:130px 0 150px;
+    background:linear-gradient(180deg,#05080f 0%,#081020 45%,#0a1526 75%,var(--navy) 100%)}
+
+  /* parallax layers */
+  .layer{position:absolute; inset:0; pointer-events:none; will-change:transform}
+
+  /* stars */
+  .stars span{position:absolute; background:#fff; border-radius:50%;
+    animation:twinkle var(--tw,4s) ease-in-out infinite alternate}
+  @keyframes twinkle{from{opacity:var(--o,.5)}to{opacity:calc(var(--o,.5)*.25)}}
+
+  /* aurora curtains */
+  .aurora{filter:blur(46px) saturate(1.25); opacity:.85; inset:-15% -10%}
+  .aurora i{position:absolute; display:block; border-radius:50%;
+    mix-blend-mode:screen; transform-origin:center}
+  .aurora .a1{width:90vw; height:52vh; left:-12%; top:-6%;
+    background:radial-gradient(ellipse at center, rgba(55,230,161,.5), transparent 65%);
+    animation:drift1 17s ease-in-out infinite alternate}
+  .aurora .a2{width:75vw; height:46vh; right:-16%; top:-2%;
+    background:radial-gradient(ellipse at center, rgba(62,195,212,.42), transparent 65%);
+    animation:drift2 22s ease-in-out infinite alternate}
+  .aurora .a3{width:60vw; height:44vh; left:22%; top:8%;
+    background:radial-gradient(ellipse at center, rgba(127,92,224,.36), transparent 62%);
+    animation:drift3 26s ease-in-out infinite alternate}
+  .aurora .a4{width:100vw; height:30vh; left:-6%; top:-10%;
+    background:linear-gradient(100deg, rgba(55,230,161,.34), rgba(62,195,212,.22) 45%, rgba(127,92,224,.24) 80%, transparent);
+    border-radius:40%;
+    animation:drift4 20s ease-in-out infinite alternate}
+  @keyframes drift1{from{transform:translate(-4%,0) rotate(-6deg) scaleY(1)}to{transform:translate(7%,6%) rotate(4deg) scaleY(1.25)}}
+  @keyframes drift2{from{transform:translate(3%,2%) rotate(5deg)}to{transform:translate(-6%,-4%) rotate(-4deg) scaleY(1.3)}}
+  @keyframes drift3{from{transform:translate(0,4%) rotate(-3deg) scaleX(1)}to{transform:translate(-5%,-3%) rotate(6deg) scaleX(1.2)}}
+  @keyframes drift4{from{transform:translateX(-3%) skewX(-6deg)}to{transform:translateX(5%) skewX(5deg)}}
+
+  /* vertical light rays */
+  .rays{opacity:.5; mix-blend-mode:screen}
+  .rays i{position:absolute; top:-5%; width:110px; height:62vh; display:block;
+    background:linear-gradient(180deg, rgba(55,230,161,.28), rgba(62,195,212,.1) 55%, transparent);
+    filter:blur(18px); transform:skewX(-8deg);
+    animation:ray var(--rd,9s) ease-in-out infinite alternate}
+  @keyframes ray{from{opacity:.25; transform:skewX(-8deg) translateY(0)}to{opacity:.9; transform:skewX(-5deg) translateY(4%)}}
+
+  /* treelines */
+  .treeline{position:absolute; left:0; right:0; bottom:-2px; pointer-events:none; will-change:transform}
+  .treeline svg{display:block; width:100%; height:auto}
+  .tree-back{opacity:.55; filter:blur(1.5px)}
+
+  .hero .wrap{position:relative; z-index:5; max-width:840px; will-change:transform,opacity}
+  .eyebrow{color:var(--aurora1); font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+    font-size:12.5px; text-shadow:0 0 22px rgba(55,230,161,.5)}
+  .hero h1{font-size:clamp(40px,6.4vw,68px); margin:18px 0 20px; font-weight:800;
+    background:linear-gradient(120deg,#fff 30%, var(--ice) 55%, var(--aurora1) 100%);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent}
+  .hero p.lead{font-size:clamp(17px,2.2vw,20px); color:var(--muted); max-width:620px}
+  .hero .actions{display:flex; gap:14px; margin-top:36px; flex-wrap:wrap}
+  .loc{margin-top:30px; color:var(--ice); font-size:14px; letter-spacing:.03em; opacity:.9}
+
+  .scroll-hint{position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+    z-index:6; color:var(--muted); font-size:22px; animation:bob 2.2s ease-in-out infinite; opacity:.7}
+  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+  /* ============ SECTIONS ============ */
+  section{padding:96px 0; position:relative}
+  .kicker{color:var(--aurora1); font-weight:600; letter-spacing:.18em; text-transform:uppercase; font-size:12px}
+  .sec-head{max-width:660px; margin-bottom:52px}
+  .sec-head h2{font-size:clamp(28px,4vw,42px); margin:14px 0 14px}
+  .sec-head p{color:var(--muted); font-size:16.5px}
+
+  /* scroll reveal */
+  .reveal{opacity:0; transform:translateY(34px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1)}
+  .reveal.in{opacity:1; transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  .reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.4s}
+
+  .grid{display:grid; gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:900px){.g3{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.g3{grid-template-columns:1fr}}
+
+  .card{background:linear-gradient(180deg,var(--navy3),var(--navy2)); border:1px solid var(--line);
+    border-radius:18px; padding:30px 28px; position:relative; overflow:hidden;
+    transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease}
+  .card:before{content:""; position:absolute; inset:0 0 auto; height:1px;
+    background:linear-gradient(90deg,transparent, rgba(55,230,161,.55), rgba(62,195,212,.4), transparent);
+    opacity:0; transition:opacity .25s}
+  .card:hover{transform:translateY(-5px); border-color:rgba(55,230,161,.35);
+    box-shadow:0 18px 44px rgba(3,8,16,.55)}
+  .card:hover:before{opacity:1}
+  .card .ico{font-size:27px; margin-bottom:14px}
+  .card h3{font-size:19px; margin-bottom:9px}
+  .card p{color:var(--muted); font-size:15px}
+  .price{display:block; margin-top:16px; color:var(--star2); font-weight:700;
+    font-size:13.5px; letter-spacing:.04em; font-family:var(--font-display)}
+
+  /* ============ WHY (parallax band) ============ */
+  .why{overflow:hidden}
+  .why .band{position:absolute; inset:-30% 0; pointer-events:none; will-change:transform;
+    background:
+      radial-gradient(700px 320px at 15% 30%, rgba(55,230,161,.09), transparent 65%),
+      radial-gradient(700px 320px at 85% 70%, rgba(127,92,224,.09), transparent 65%),
+      linear-gradient(180deg,var(--navy),#0a1424 55%, var(--navy))}
+  .why .wrap{position:relative}
+  .why-grid{display:grid; grid-template-columns:1.1fr 1fr; gap:52px; align-items:center}
+  @media(max-width:820px){.why-grid{grid-template-columns:1fr}}
+  .stat-row{display:flex; gap:16px; flex-wrap:wrap; margin-top:8px}
+  .stat{flex:1; min-width:150px; background:rgba(17,29,51,.75); border:1px solid var(--line);
+    border-radius:16px; padding:22px; backdrop-filter:blur(4px); transition:border-color .2s}
+  .stat:hover{border-color:rgba(62,195,212,.45)}
+  .stat b{display:block; font-size:30px; font-family:var(--font-display);
+    background:linear-gradient(120deg,var(--star2),var(--aurora1));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent}
+  .stat span{color:var(--muted); font-size:14px}
+  .why ul{list-style:none; margin-top:12px}
+  .why li{padding:10px 0 10px 32px; position:relative; color:var(--ice)}
+  .why li:before{content:"✦"; color:var(--aurora1); position:absolute; left:0; top:9px;
+    font-size:14px; text-shadow:0 0 10px rgba(55,230,161,.6)}
+
+  /* ============ GALLERY ============ */
+  .shots{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  @media(max-width:700px){.shots{grid-template-columns:1fr 1fr}}
+  .shot{aspect-ratio:4/3; border-radius:16px; border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    color:var(--muted); font-size:13px; position:relative; overflow:hidden;
+    background:
+      radial-gradient(140px 70px at 70% 18%, rgba(55,230,161,.1), transparent),
+      radial-gradient(120px 60px at 25% 80%, rgba(127,92,224,.08), transparent),
+      linear-gradient(160deg,#152238,#0c1424);
+    transition:transform .22s ease, border-color .22s ease}
+  .shot:hover{transform:scale(1.025); border-color:rgba(232,184,75,.4)}
+  .note{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
+
+  /* ============ CONTACT ============ */
+  .contact{text-align:center; overflow:hidden}
+  .contact .glow{position:absolute; inset:-20% 0; pointer-events:none; will-change:transform;
+    background:
+      radial-gradient(640px 300px at 50% 15%, rgba(55,230,161,.1), transparent 70%),
+      radial-gradient(520px 260px at 70% 80%, rgba(127,92,224,.08), transparent 70%),
+      linear-gradient(180deg,var(--navy),#0a1424 60%, #060b14)}
+  .contact .wrap{position:relative}
+  .contact h2{font-size:clamp(28px,4vw,44px); margin-bottom:14px}
+  .contact > .wrap > p{color:var(--muted); max-width:560px; margin:0 auto 32px}
+  .qform{max-width:580px; margin:0 auto; text-align:left; background:rgba(13,22,38,.7);
+    border:1px solid var(--line); border-radius:20px; padding:34px 30px; backdrop-filter:blur(8px)}
+  @media(max-width:560px){.qform{padding:26px 20px}}
+  .qform .row{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+  @media(max-width:560px){.qform .row{grid-template-columns:1fr}}
+  .field{margin-bottom:15px}
+  .field label{display:block; font-size:13px; color:var(--ice); margin-bottom:7px;
+    letter-spacing:.02em; font-weight:500}
+  .field input,.field textarea{width:100%; background:rgba(7,13,24,.7); border:1px solid var(--line);
+    border-radius:11px; padding:13px 15px; color:var(--text); font-size:15px; font-family:inherit;
+    transition:border-color .18s ease, box-shadow .18s ease}
+  .field input:focus,.field textarea:focus{outline:none; border-color:var(--aurora1);
+    box-shadow:0 0 0 3px rgba(55,230,161,.14)}
+  .field textarea{resize:vertical; min-height:110px}
+  .qform .btn{width:100%; border:none; cursor:pointer; font-size:16px; margin-top:6px}
+  .formnote{font-size:12.5px; color:var(--muted); text-align:center; margin-top:14px}
+
+  footer{border-top:1px solid var(--line); padding:34px 0; color:var(--muted);
+    font-size:14px; background:#060b14}
+  .foot{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important; transition:none!important}
+    .reveal{opacity:1; transform:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<header id="topbar">
+  <nav>
+    <div class="brand"><span class="mark">✦</span> UP NORTH AERIAL</div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+    <div class="navlinks" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Aerial</a>
+      <a href="#work">Work</a>
+      <a href="#contact" class="cta">Get a Quote</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <!-- parallax layers (slowest → fastest) -->
+  <div class="layer stars" id="stars" data-speed="0.12"></div>
+  <div class="layer aurora" data-speed="0.28">
+    <i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i>
+  </div>
+  <div class="layer rays" id="rays" data-speed="0.22"></div>
+
+  <div class="wrap" id="heroContent">
+    <p class="eyebrow">Drone Real Estate Media · Northwest Wisconsin</p>
+    <h1>Listings that stop the scroll.</h1>
+    <p class="lead">Professional aerial photography and video that makes homes, land, and lakefront property look their absolute best — delivered fast so your listing goes live sooner.</p>
+    <div class="actions">
+      <a href="#contact" class="btn">Book a Shoot</a>
+      <a href="#services" class="btn ghost">See Services</a>
+    </div>
+    <p class="loc">📍 Serving Siren, Burnett County &amp; the greater Northwoods · FAA Part 107 Certified</p>
+  </div>
+
+  <!-- layered pine treeline for depth -->
+  <div class="treeline tree-back" data-speed="0.42">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0b1526" d="M0,150 L0,96 L28,96 L44,58 L60,96 L78,96 L96,44 L114,96 L132,96 L150,70 L168,96 L196,96 L214,52 L232,96 L252,96 L270,66 L288,96 L316,96 L336,38 L356,96 L376,96 L394,72 L412,96 L440,96 L458,50 L476,96 L498,96 L518,62 L538,96 L566,96 L586,42 L606,96 L626,96 L644,74 L662,96 L690,96 L710,54 L730,96 L750,96 L768,66 L786,96 L814,96 L834,40 L854,96 L874,96 L892,72 L910,96 L938,96 L956,50 L974,96 L996,96 L1016,60 L1036,96 L1064,96 L1084,44 L1104,96 L1124,96 L1142,70 L1160,96 L1188,96 L1206,54 L1224,96 L1246,96 L1266,64 L1286,96 L1314,96 L1334,42 L1354,96 L1374,96 L1392,72 L1410,96 L1440,96 L1440,150 Z"/>
+    </svg>
+  </div>
+  <div class="treeline" data-speed="0.6">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#050a12" d="M0,120 L0,84 L24,84 L42,40 L60,84 L82,84 L102,26 L122,84 L142,84 L160,58 L178,84 L206,84 L226,34 L246,84 L268,84 L288,52 L308,84 L336,84 L358,22 L380,84 L400,84 L420,60 L440,84 L468,84 L488,36 L508,84 L530,84 L552,50 L574,84 L602,84 L624,28 L646,84 L666,84 L686,62 L706,84 L734,84 L756,40 L778,84 L798,84 L818,54 L838,84 L866,84 L888,24 L910,84 L930,84 L950,60 L970,84 L998,84 L1018,38 L1038,84 L1060,84 L1082,48 L1104,84 L1132,84 L1154,30 L1176,84 L1196,84 L1216,58 L1236,84 L1264,84 L1286,42 L1308,84 L1330,84 L1352,52 L1374,84 L1402,84 L1420,64 L1440,84 L1440,120 Z"/>
+    </svg>
+  </div>
+
+  <div class="scroll-hint">▾</div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">What We Offer</p>
+      <h2>Media that helps agents sell faster</h2>
+      <p>Everything an agent needs to market a property from above — clean, professional, and ready for the MLS.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal">
+        <div class="ico">📸</div>
+        <h3>Aerial Photo Package</h3>
+        <p>A full set of high-resolution aerial stills — hero shot, property lines, yard, and standout features. Edited and MLS-ready.</p>
+        <span class="price">Listings starting at $150</span>
+      </div>
+      <div class="card reveal d1">
+        <div class="ico">🎬</div>
+        <h3>Cinematic Video Tour</h3>
+        <p>Smooth reveal, orbit, and fly-away footage set to music. The kind of video that gets shared and remembered.</p>
+        <span class="price">Video from $250</span>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico">🌅</div>
+        <h3>Twilight &amp; Lakefront</h3>
+        <p>Golden-hour and dusk shoots that showcase waterfront, acreage, and the setting — perfect for premium listings.</p>
+        <span class="price">Add-on or custom</span>
+      </div>
+      <div class="card reveal d1">
+        <div class="ico">🗺️</div>
+        <h3>Land &amp; Lot Overview</h3>
+        <p>Top-down and wide-context shots that show the full parcel, boundaries, and surroundings for land listings.</p>
+        <span class="price">Included in packages</span>
+      </div>
+      <div class="card reveal d2">
+        <div class="ico">⚡</div>
+        <h3>Fast Turnaround</h3>
+        <p>Same-day or next-day delivery via a clean download link, so your listing never waits on the photos.</p>
+        <span class="price">Standard on every job</span>
+      </div>
+      <div class="card reveal d3">
+        <div class="ico">📦</div>
+        <h3>Full Listing Bundle</h3>
+        <p>Photos + video + twilight in one discounted package. The complete aerial marketing kit for a property.</p>
+        <span class="price">Best value — ask for pricing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="band" data-speed="0.15"></div>
+  <div class="wrap why-grid">
+    <div class="reveal">
+      <p class="kicker">Why Aerial</p>
+      <h2 style="font-size:clamp(26px,4vw,38px);margin:14px 0 16px">Homes with aerial media get noticed</h2>
+      <p style="color:var(--muted);margin-bottom:6px">Buyers scroll fast. Aerial shots give a property scale, context, and a wow factor that ground-level photos can't — especially for land, acreage, and lakefront.</p>
+      <ul>
+        <li>Show the whole property, the lot lines, and the setting in one frame</li>
+        <li>Make lakefront, acreage, and outbuildings the star of the listing</li>
+        <li>Stand out in the MLS with video most listings don't have</li>
+        <li>Licensed, insured, and flying to FAA Part 107 standards</li>
+      </ul>
+    </div>
+    <div class="reveal d2">
+      <div class="stat-row">
+        <div class="stat"><b>24hr</b><span>Typical delivery</span></div>
+        <div class="stat"><b>4K</b><span>Photo &amp; video quality</span></div>
+      </div>
+      <div class="stat-row" style="margin-top:16px">
+        <div class="stat"><b>Part&nbsp;107</b><span>FAA certified pilot</span></div>
+        <div class="stat"><b>Local</b><span>Based right in Siren</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Recent Work</p>
+      <h2>A look from above</h2>
+      <p>Gallery coming soon — these placeholders are where your first listing shots will go.</p>
+    </div>
+    <div class="shots">
+      <div class="shot reveal">Hero exterior<br>(coming soon)</div>
+      <div class="shot reveal d1">Lakefront twilight<br>(coming soon)</div>
+      <div class="shot reveal d2">Full lot / acreage<br>(coming soon)</div>
+      <div class="shot reveal d1">Backyard &amp; features<br>(coming soon)</div>
+      <div class="shot reveal d2">Neighborhood context<br>(coming soon)</div>
+      <div class="shot reveal d3">Cinematic video still<br>(coming soon)</div>
+    </div>
+    <p class="note reveal">Swap these tiles for real photos as you build your portfolio from your first few shoots.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="glow" data-speed="0.12"></div>
+  <div class="wrap">
+    <p class="kicker reveal">Get Started</p>
+    <h2 class="reveal">Let's get your listing in the air</h2>
+    <p class="reveal d1">Tell me the property address and your timeline, and I'll get you a quote and a shoot date — usually within a day.</p>
+
+    <form class="qform reveal d2" action="https://formsubmit.co/upnorthaerial@gmail.com" method="POST">
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_subject" value="New quote request — Up North Aerial">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+
+      <div class="row">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" type="text" name="Name" required placeholder="Jane Agent">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="Email" required placeholder="you@email.com">
+        </div>
+      </div>
+      <div class="row">
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" name="Phone" placeholder="(715) 000-0000">
+        </div>
+        <div class="field">
+          <label for="address">Property address</label>
+          <input id="address" type="text" name="Property Address" placeholder="123 Lake Rd, Siren WI">
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">What do you need? (photos, video, timeline)</label>
+        <textarea id="message" name="Details" placeholder="New lakefront listing, need aerial photos + a short video. Hoping to shoot this week."></textarea>
+      </div>
+      <button type="submit" class="btn">Request My Quote →</button>
+      <p class="formnote">Or email <a href="mailto:upnorthaerial@gmail.com" style="color:var(--star2)">upnorthaerial@gmail.com</a> · FAA Part 107 Certified · Licensed &amp; Insured</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><span class="brand"><span class="mark">✦</span> UP NORTH AERIAL</span></div>
+    <div>Siren, Wisconsin · Serving the Northwoods · © 2026 Up North Aerial</div>
+  </div>
+</footer>
+
+<script>
+  // ---------- twinkling stars ----------
+  const starBox = document.getElementById('stars');
+  let starHtml = '';
+  for(let i=0;i<90;i++){
+    const x=Math.random()*100, y=Math.random()*72, s=(Math.random()*1.8+0.8).toFixed(1),
+          o=(Math.random()*0.55+0.25).toFixed(2), tw=(Math.random()*4+2.5).toFixed(1);
+    starHtml += `<span style="left:${x}%;top:${y}%;width:${s}px;height:${s}px;--o:${o};--tw:${tw}s"></span>`;
+  }
+  starBox.innerHTML = starHtml;
+
+  // ---------- aurora light rays ----------
+  const rayBox = document.getElementById('rays');
+  let rayHtml = '';
+  for(let i=0;i<8;i++){
+    const x=6+i*12+Math.random()*5, rd=(Math.random()*5+6).toFixed(1), delay=(Math.random()*-8).toFixed(1);
+    rayHtml += `<i style="left:${x}%;--rd:${rd}s;animation-delay:${delay}s"></i>`;
+  }
+  rayBox.innerHTML = rayHtml;
+
+  // ---------- parallax ----------
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const heroContent = document.getElementById('heroContent');
+  const hero = document.querySelector('.hero');
+  const layers = document.querySelectorAll('[data-speed]');
+
+  if(!reduceMotion){
+    let ticking = false;
+    function onScroll(){
+      if(ticking) return;
+      ticking = true;
+      requestAnimationFrame(()=>{
+        const y = window.scrollY;
+        // hero layers drift at different speeds; section bands drift relative to viewport
+        layers.forEach(el=>{
+          const sp = parseFloat(el.dataset.speed);
+          if(el.closest('.hero')){
+            el.style.transform = `translateY(${y*sp}px)`;
+          }else{
+            const r = el.parentElement.getBoundingClientRect();
+            el.style.transform = `translateY(${(r.top - innerHeight/2)*-sp}px)`;
+          }
+        });
+        // fade + drift hero text
+        const h = hero.offsetHeight;
+        const p = Math.min(y/h, 1);
+        heroContent.style.transform = `translateY(${y*0.35}px)`;
+        heroContent.style.opacity = 1 - p*1.15;
+        ticking = false;
+      });
+    }
+    addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  }
+
+  // ---------- scroll reveal ----------
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // ---------- nav: solid on scroll + mobile menu ----------
+  const topbar = document.getElementById('topbar');
+  addEventListener('scroll', ()=>topbar.classList.toggle('scrolled', scrollY>30), {passive:true});
+  topbar.classList.toggle('scrolled', scrollY>30);
+
+  const menuBtn = document.getElementById('menuBtn');
+  const navlinks = document.getElementById('navlinks');
+  menuBtn.addEventListener('click', ()=>{
+    const open = navlinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.textContent = open ? '✕' : '☰';
+  });
+  navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
+    navlinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded','false');
+    menuBtn.textContent = '☰';
+  }));
+</script>
+</body>
+</html>
